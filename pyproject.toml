@@ -1,0 +1,23 @@
+[project]
+name = "draft-product-description-ai-assistant"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic>=2.3.0",
+    "black>=26.10.1",
+    "fastapi[all]>=0.162.0",
+    "flake8>=7.5.0",
+    "isort>=9.0.2",
+    "loguru>=0.7.3",
+    "openai>=3.42.1",
+]
+
+[tool.black]
+line-length = 88
+target-version = ['py312']
+
+[tool.isort]
+profile = "black"
+line_length = 88
